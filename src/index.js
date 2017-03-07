@@ -73,7 +73,7 @@ const vmC = new Vue({
 store.ajaxLoader();
 
 (function () {
-  var run = () => {
+  const run = () => {
     console.log("document ready");
     document.getElementById("filterSpecies").onclick = store.filter;
     $(document.body).on('click', 'img', function () {
